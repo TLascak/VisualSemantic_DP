@@ -154,7 +154,7 @@ public class VisualSemanticsOperator extends BaseOperator {
             return false;
         }
           
-
+        //step two and three don't have any affect on segmentation 
         
         //step four
         if (B.getChildCount() == 1) {
@@ -168,7 +168,7 @@ public class VisualSemanticsOperator extends BaseOperator {
         
         //step six
         if (AvgContentSimilarity(B) < beta) {
-            return false;
+            return true;
         }
                 
         //step seven
